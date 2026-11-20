@@ -1,3 +1,20 @@
+# Hicom Books
+
+Hicom Books is Hicom System's hosted accounting app. It is a modified version of
+[Frappe Books](https://github.com/frappe/frappe-books) (branch `version-16`), released under the
+GNU Affero General Public License v3 like the original (see [license.txt](license.txt)).
+
+- **Modified by:** Hicom System, from 2026-11-20. Branch `hicom-16` holds the changes on top of upstream `version-16`.
+- **What changed:** the product name, logo and icons, the documentation links, a License & Source Code dialog,
+  site branding settings and a guard that keeps client users in `/books`. Every change is listed in
+  [BRANDING.md](BRANDING.md).
+- **Copyright:** the original copyright notices of Frappe Technologies Pvt. Ltd. and contributors are kept in
+  every source file.
+
+The original upstream README follows.
+
+---
+
 <div align="center">
 	<a href="https://frappe.io/books">
 		<img src="./frappe_books/public/pwa/icon.svg" alt="Frappe Books logo" height="80px" width="80px"/>

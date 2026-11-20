@@ -1,8 +1,8 @@
 app_name = "frappe_books"
-app_title = "Books"
-app_publisher = "Frappe Technologies Pvt. Ltd."
-app_description = "Frappe Books for Frappe Framework"
-app_email = "hello@frappe.io"
+app_title = "Hicom Books"
+app_publisher = "Hicom System"
+app_description = "Hicom Books"
+app_email = "support@hicomsystem.com"
 app_license = "agpl-3.0"
 app_logo_url = "/assets/frappe_books/books-icon.png"
 app_icon_url = app_logo_url
@@ -42,7 +42,15 @@ jinja = {
 
 # The search palette's index; a new site builds it now, not at Frappe's next three-hourly check.
 sqlite_search = ["frappe_books.search.BooksSearch"]
-after_install = ["frappe_books.setup.bootstrap", "frappe_books.search.build_search_index"]
+after_install = [
+	"frappe_books.setup.bootstrap",
+	"frappe_books.search.build_search_index",
+	"frappe_books.hicom.branding.apply_branding",
+]
+# Hicom Books: branding on every migrate, and client users kept in /books.
+after_migrate = ["frappe_books.hicom.branding.apply_branding"]
+before_request = ["frappe_books.hicom.guard.redirect_to_books"]
+after_request = ["frappe_books.hicom.response.strip_generator_meta"]
 before_tests = [
 	"frappe_books.setup.before_tests",
 	"frappe_books.tests.accounting.enable_features",

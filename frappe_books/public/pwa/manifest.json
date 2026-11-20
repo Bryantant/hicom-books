@@ -1,7 +1,7 @@
 {
  "id": "/books/",
- "name": "Frappe Books",
- "short_name": "Books",
+ "name": "Hicom Books",
+ "short_name": "Hicom Books",
  "description": "Invoices, payments and accounts for small businesses",
  "start_url": "/books/",
  "scope": "/books/",

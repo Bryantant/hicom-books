@@ -12,7 +12,7 @@
     v-model:open="openModal"
     v-model:query="query"
     :filterable="false"
-    :title="t`Search Frappe Books`"
+    :title="t`Search Hicom Books`"
     @select="selectSearchItem"
   >
     <CommandPaletteInput :placeholder="t`Type to search...`" />
@@ -156,6 +156,7 @@
 
 <script lang="ts">
 import { shortcutsKey } from 'src/utils/injectionKeys';
+import { getDocsUrl } from 'src/utils/hicomBrand';
 import { docsPathMap } from 'src/utils/misc';
 import {
   SearchGroup,
@@ -263,7 +264,7 @@ export default defineComponent({
   methods: {
     openDocs() {
       window.open(
-        'https://docs.frappe.io/' + docsPathMap.Search,
+        getDocsUrl(docsPathMap.Search),
         '_blank',
         'noopener,noreferrer'
       );

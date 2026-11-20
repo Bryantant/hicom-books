@@ -31,7 +31,7 @@
       >
         <FrappeAlert
           class="max-w-xl"
-          :title="t`Frappe Books is not set up yet`"
+          :title="t`Hicom Books is not set up yet`"
           :description="t`Ask a System Manager to complete the setup.`"
           :primary-action="{ label: t`Try again`, onClick: () => initialize() }"
         />

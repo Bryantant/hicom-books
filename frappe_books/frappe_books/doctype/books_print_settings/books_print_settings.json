@@ -77,7 +77,7 @@
    "placeholder": "Select Color"
   },
   {
-   "description": "The Font of Frappe's Print Settings, which only a System Manager can change.",
+   "description": "The Font of the Print Settings, which only a System Manager can change.",
    "fieldname": "font",
    "fieldtype": "Select",
    "is_virtual": 1,

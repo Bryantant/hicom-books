@@ -49,7 +49,7 @@ test('the desk theme paints the app; Automatic follows the system', () => {
   );
 });
 
-test('Documentation opens the Books docs on a page that has none of its own', () => {
+test('Documentation opens the Hicom Books docs on a page that has none of its own', () => {
   const opened = [];
   globalThis.window.open = (url) => opened.push(url);
   const documentation = getAppMenuItems()
@@ -62,8 +62,8 @@ test('Documentation opens the Books docs on a page that has none of its own', ()
   documentation.onClick();
 
   assert.deepEqual(opened, [
-    'https://docs.frappe.io/books',
-    'https://docs.frappe.io/books/sales-invoices',
+    'https://docs.books.hicomsystem.com/',
+    'https://docs.books.hicomsystem.com/sales-invoices',
   ]);
 });
 
@@ -72,7 +72,7 @@ test('the menu names the Books version, as support asks for it', () => {
   const [help] = getAppMenuItems();
   assert.deepEqual(
     [help.group, help.hideLabel],
-    ['Frappe Books 16.1.1', false]
+    ['Hicom Books 16.1.1', false]
   );
 
   fyo.store.appVersion = '';

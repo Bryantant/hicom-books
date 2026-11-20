@@ -25,7 +25,7 @@
   },
   {
    "default": "MMM d, y",
-   "description": "Frappe's System Settings take the closest numeric date format. Only a System Manager can change it.",
+   "description": "The System Settings take the closest numeric date format. Only a System Manager can change it.",
    "fieldname": "date_format",
    "fieldtype": "Autocomplete",
    "in_list_view": 1,
@@ -58,7 +58,7 @@
   },
   {
    "default": "en-IN",
-   "description": "Frappe's System Settings take its number format. Only a System Manager can change it.",
+   "description": "The System Settings take its number format. Only a System Manager can change it.",
    "fieldname": "locale",
    "fieldtype": "Autocomplete",
    "in_list_view": 1,
@@ -66,7 +66,7 @@
    "reqd": 1
   },
   {
-   "description": "Decimal places shown for amounts. It is the Currency Precision of Frappe's System Settings, which only a System Manager can change. Quantities follow Frappe's float precision.",
+   "description": "Decimal places shown for amounts. It is the Currency Precision of the System Settings, which only a System Manager can change. Quantities follow the system float precision.",
    "fieldname": "display_precision",
    "fieldtype": "Int",
    "in_list_view": 1,
